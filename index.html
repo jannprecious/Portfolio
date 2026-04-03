@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janna's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-name">Precious Janna D. Subong</div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-item active-nav">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="mobile-menu" type="button" aria-label="Toggle navigation">Menu</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <p class="section-tag">UI/UX Designer and IT Professional</p>
+      <h1>Janna's Portfolio</h1>
+      <p class="hero-description">I create simple, functional, and user-friendly digital experiences.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-header">
+        <p class="section-tag">About</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-image">
+          <img src="assets/profile-photo.jpg" alt="Portrait of Precious Janna D. Subong" class="profile-photo">
+        </div>
+        <div class="about-copy">
+          <p>Hi, I'm Precious Janna D. Subong, a UI/UX designer who enjoys building meaningful digital experiences that are clear, functional, and engaging.</p>
+          <p>I focus on wireframing, prototyping, and shaping ideas into layouts that feel simple for users and effective for the people using them.</p>
+          <p>I am always learning, improving, and designing with purpose so every interaction feels thoughtful and easy to use.</p>
+          <div class="skill-bubbles">
+            <span>Wireframing</span>
+            <span>Prototyping</span>
+            <span>UI Layouts</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-header">
+        <p class="section-tag">Skills</p>
+        <h2>What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>MySQL</h3>
+          <p>I design and manage databases for organized storage, retrieval, and maintenance.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Figma</h3>
+          <p>I create layouts, wireframes, and prototypes for clean and user-friendly interfaces.</p>
+        </article>
+        <article class="skill-card">
+          <h3>CSS</h3>
+          <p>I style webpages to make them responsive, polished, and visually consistent.</p>
+        </article>
+        <article class="skill-card">
+          <h3>HTML</h3>
+          <p>I build well-structured pages that give every project a strong foundation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-header">
+        <p class="section-tag">Portfolio</p>
+        <h2>Featured Projects</h2>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active-filter" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="web" type="button">Web</button>
+        <button class="filter-btn" data-filter="app" type="button">App</button>
+        <button class="filter-btn" data-filter="java" type="button">Java</button>
+      </div>
+      <div class="work-grid" id="workGrid"></div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-header">
+        <p class="section-tag">Contact</p>
+        <h2>Let's Connect</h2>
+      </div>
+      <div class="contact-grid">
+        <article class="contact-card">
+          <h3>Phone</h3>
+          <p>09159535899</p>
+        </article>
+        <article class="contact-card">
+          <h3>Email</h3>
+          <p>pjanna@gmail.com</p>
+        </article>
+        <article class="contact-card">
+          <h3>Facebook</h3>
+          <p>Precious Janna Subong</p>
+        </article>
+        <article class="contact-card">
+          <h3>Instagram</h3>
+          <p>@prcs.jnna</p>
+        </article>
+      </div>
+      <div class="social-links">
+        <a href="mailto:pjanna@gmail.com">Email</a>
+        <a href="tel:09159535899">Call</a>
+        <a href="https://www.instagram.com/prcs.jnna/" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Janna's Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
