@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Janna's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="site-name">Precious Janna D. Subong</div>
+    <a href="#home" class="site-name">Janna.</a>
     <nav class="site-nav" aria-label="Primary navigation">
       <ul class="nav-links">
         <li><a href="#home" class="nav-item active-nav">Home</a></li>
         <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#journey" class="nav-item">Journey</a></li>
         <li><a href="#skills" class="nav-item">Skills</a></li>
         <li><a href="#projects" class="nav-item">Projects</a></li>
         <li><a href="#contact" class="nav-item">Contact</a></li>
@@ -22,109 +23,205 @@
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero section">
-      <p class="section-tag">UI/UX Designer and IT Professional</p>
-      <h1>Janna's Portfolio</h1>
-      <p class="hero-description">I create simple, functional, and user-friendly digital experiences.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+  <main class="page-shell">
+    <section id="home" class="panel hero-panel section">
+      <div class="hero-copy">
+        <p class="eyebrow">UI/UX Portfolio</p>
+        <h1>Hi, I'm Precious Janna Subong</h1>
+        <p class="hero-role">Frontend Developer and UI/UX Designer</p>
+        <p class="hero-description">I build clean and responsive interfaces that are easy to explore, visually polished, and focused on real user needs.</p>
+        <div class="hero-actions">
+          <a href="https://jannprecious.github.io/Portfolio/" class="primary-button" target="_blank" rel="noreferrer">View Live Portfolio</a>
+          <a href="https://github.com/jannprecious/Portfolio" class="outline-button" target="_blank" rel="noreferrer">Portfolio Repo</a>
+        </div>
+        <div class="social-row">
+          <a href="mailto:pjsubong@gmail.com" class="social-email" aria-label="Email">Email</a>
+          <a href="https://github.com/jannprecious" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://www.instagram.com/prcs.jnna/" target="_blank" rel="noreferrer" aria-label="Instagram">IG</a>
+          <a href="https://jannprecious.github.io/Portfolio/" target="_blank" rel="noreferrer" aria-label="Live Portfolio">Live</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="hero-image-frame">
+          <img src="assets/profile-photo.jpg" alt="Portrait of Precious Janna D. Subong" class="hero-image">
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="section-header">
-        <p class="section-tag">About</p>
-        <h2>About Me</h2>
+    <section class="panel github-panel section" aria-labelledby="github-title">
+      <div class="github-copy">
+        <p class="eyebrow">GitHub Portfolio</p>
+        <h2 id="github-title">Portfolio connected to <span>GitHub Pages</span></h2>
+        <p class="panel-copy">This portfolio is live at jannprecious.github.io/Portfolio/ so visitors can open the published site, check the source code, and find the GitHub account behind it.</p>
       </div>
-      <div class="about-layout">
-        <div class="about-image">
-          <img src="assets/profile-photo.jpg" alt="Portrait of Precious Janna D. Subong" class="profile-photo">
+      <div class="github-stats">
+        <article class="github-stat">
+          <span>Live URL</span>
+          <strong>jannprecious.github.io/Portfolio/</strong>
+        </article>
+        <article class="github-stat">
+          <span>Repository</span>
+          <strong>jannprecious/Portfolio</strong>
+        </article>
+        <article class="github-stat">
+          <span>Deployment</span>
+          <strong>GitHub Pages</strong>
+        </article>
+      </div>
+      <div class="github-links">
+        <a href="https://jannprecious.github.io/Portfolio/" class="primary-button" target="_blank" rel="noreferrer">Open Live Site</a>
+        <a href="https://github.com/jannprecious/Portfolio" class="outline-button" target="_blank" rel="noreferrer">Open Repository</a>
+        <a href="https://github.com/jannprecious" class="outline-button" target="_blank" rel="noreferrer">Open Profile</a>
+      </div>
+    </section>
+
+    <section id="about" class="panel about-panel section">
+      <div class="panel-heading centered">
+        <h2>About <span>Me</span></h2>
+      </div>
+      <div class="about-ring">
+        <img src="assets/profile-photo.jpg" alt="Profile of Precious Janna D. Subong" class="about-avatar">
+      </div>
+      <p class="about-role">Frontend Developer</p>
+      <p class="about-text">Hi, I'm Precious Janna D. Subong. I enjoy designing digital experiences that feel structured, modern, and easy for people to use. I focus on wireframing, prototyping, and turning ideas into simple layouts with clear purpose.</p>
+      <div class="about-tags">
+        <span>Wireframing</span>
+        <span>Prototyping</span>
+        <span>Responsive UI</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>MySQL</span>
+      </div>
+      <a href="#projects" class="primary-button about-button">Read More</a>
+    </section>
+
+    <section id="journey" class="panel journey-panel section">
+      <div class="panel-heading panel-heading-compact">
+        <h2>My <span>Journey</span></h2>
+      </div>
+      <div class="journey-columns">
+        <div class="journey-group">
+          <h3>Education</h3>
+          <article class="journey-card">
+            <span class="journey-year">2023 - Present</span>
+            <h4>Bachelor of Science in Information Technology</h4>
+            <p>Currently taking BSIT at Western Institute of Technology as a 2nd year student.</p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-year">2021 - 2023</span>
+            <h4>Senior High School Graduate</h4>
+            <p>Completed Senior High School at Sacred Heart Academy, Inc.</p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-year">2017 - 2021</span>
+            <h4>Junior High School Graduate</h4>
+            <p>Completed Junior High School at Sacred Heart Academy, Inc.</p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-year">2011 - 2017</span>
+            <h4>Elementary Graduate</h4>
+            <p>Completed Elementary School at Dawis Elementary School.</p>
+          </article>
         </div>
-        <div class="about-copy">
-          <p>Hi, I'm Precious Janna D. Subong, a UI/UX designer who enjoys building meaningful digital experiences that are clear, functional, and engaging.</p>
-          <p>I focus on wireframing, prototyping, and shaping ideas into layouts that feel simple for users and effective for the people using them.</p>
-          <p>I am always learning, improving, and designing with purpose so every interaction feels thoughtful and easy to use.</p>
-          <div class="skill-bubbles">
-            <span>Wireframing</span>
-            <span>Prototyping</span>
-            <span>UI Layouts</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>MySQL</span>
+        <div class="journey-group">
+          <h3>Experience</h3>
+          <article class="journey-card">
+            <span class="journey-year">Web Design</span>
+            <h4>Portfolio and School Projects</h4>
+            <p>Designed and built interfaces that present ideas clearly and work well across screen sizes.</p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-year">Figma Workflow</span>
+            <h4>Wireframes and Prototypes</h4>
+            <p>Created layout studies and design concepts to guide the structure of web-based projects.</p>
+          </article>
+          <article class="journey-card">
+            <span class="journey-year">Frontend</span>
+            <h4>HTML, CSS, and JavaScript</h4>
+            <p>Turning interface ideas into working pages with structured markup and polished styling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="panel skills-panel section">
+      <div class="panel-heading panel-heading-compact">
+        <h2>My <span>Skills</span></h2>
+      </div>
+      <div class="skills-columns">
+        <div class="skill-stack">
+          <h3>Coding Skills</h3>
+          <div class="skill-meter">
+            <div class="skill-meta"><span>HTML</span><span>90%</span></div>
+            <div class="skill-track"><span style="--value: 90%"></span></div>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meta"><span>CSS</span><span>85%</span></div>
+            <div class="skill-track"><span style="--value: 85%"></span></div>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meta"><span>JavaScript</span><span>70%</span></div>
+            <div class="skill-track"><span style="--value: 70%"></span></div>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meta"><span>MySQL</span><span>75%</span></div>
+            <div class="skill-track"><span style="--value: 75%"></span></div>
+          </div>
+        </div>
+        <div class="skill-stack">
+          <h3>Professional Skills</h3>
+          <div class="skill-meter">
+            <div class="skill-meta"><span>Web Design</span><span>88%</span></div>
+            <div class="skill-track"><span style="--value: 88%"></span></div>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meta"><span>UI Layout</span><span>82%</span></div>
+            <div class="skill-track"><span style="--value: 82%"></span></div>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meta"><span>Graphic Design</span><span>78%</span></div>
+            <div class="skill-track"><span style="--value: 78%"></span></div>
+          </div>
+          <div class="skill-meter">
+            <div class="skill-meta"><span>Communication</span><span>80%</span></div>
+            <div class="skill-track"><span style="--value: 80%"></span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section skills-section">
-      <div class="section-header">
-        <p class="section-tag">Skills</p>
-        <h2>What I Work With</h2>
+    <section id="projects" class="panel projects-panel section">
+      <div class="panel-heading">
+        <h2>Featured <span>Projects</span></h2>
+        <p class="panel-copy">Selected portfolio pieces that show web design, app concepts, and foundational development work.</p>
       </div>
-      <div class="skills-grid">
-        <article class="skill-card">
-          <h3>MySQL</h3>
-          <p>I design and manage databases for organized storage, retrieval, and maintenance.</p>
-        </article>
-        <article class="skill-card">
-          <h3>Figma</h3>
-          <p>I create layouts, wireframes, and prototypes for clean and user-friendly interfaces.</p>
-        </article>
-        <article class="skill-card">
-          <h3>CSS</h3>
-          <p>I style webpages to make them responsive, polished, and visually consistent.</p>
-        </article>
-        <article class="skill-card">
-          <h3>HTML</h3>
-          <p>I build well-structured pages that give every project a strong foundation.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section projects-section">
-      <div class="section-header">
-        <p class="section-tag">Portfolio</p>
-        <h2>Featured Projects</h2>
-      </div>
-      <div class="project-filters">
-        <button class="filter-btn active-filter" data-filter="all" type="button">All</button>
-        <button class="filter-btn" data-filter="web" type="button">Web</button>
-        <button class="filter-btn" data-filter="app" type="button">App</button>
-        <button class="filter-btn" data-filter="java" type="button">Java</button>
+      <div class="project-toolbar">
+        <p class="toolbar-label">Filter Projects</p>
+        <div class="project-filters">
+          <button class="filter-btn active-filter" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="web" type="button">Web</button>
+          <button class="filter-btn" data-filter="app" type="button">App</button>
+          <button class="filter-btn" data-filter="java" type="button">Java</button>
+        </div>
       </div>
       <div class="work-grid" id="workGrid"></div>
     </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="section-header">
-        <p class="section-tag">Contact</p>
-        <h2>Let's Connect</h2>
+    <section id="contact" class="panel contact-panel section">
+      <div class="panel-heading panel-heading-compact centered">
+        <h2>Contact <span>Me!</span></h2>
       </div>
-      <div class="contact-grid">
-        <article class="contact-card">
-          <h3>Phone</h3>
-          <p>09159535899</p>
-        </article>
-        <article class="contact-card">
-          <h3>Email</h3>
-          <p>pjanna@gmail.com</p>
-        </article>
-        <article class="contact-card">
-          <h3>Facebook</h3>
-          <p>Precious Janna Subong</p>
-        </article>
-        <article class="contact-card">
-          <h3>Instagram</h3>
-          <p>@prcs.jnna</p>
-        </article>
-      </div>
-      <div class="social-links">
-        <a href="mailto:pjanna@gmail.com">Email</a>
-        <a href="tel:09159535899">Call</a>
-        <a href="https://www.instagram.com/prcs.jnna/" target="_blank" rel="noreferrer">Instagram</a>
-      </div>
+      <form class="contact-form">
+        <div class="form-grid">
+          <input type="text" name="full-name" placeholder="Full Name">
+          <input type="email" name="email" placeholder="Email Address">
+          <input type="tel" name="mobile-number" placeholder="Mobile Number">
+        </div>
+        <textarea name="message" rows="7" placeholder="Your Message"></textarea>
+        <button class="primary-button submit-button" type="submit">Submit</button>
+      </form>
+      <p class="contact-note">Phone: 09159535899 | Email: pjsubong@gmail.com | GitHub: github.com/jannprecious | Live Site: https://jannprecious.github.io/Portfolio/</p>
     </section>
   </main>
 
