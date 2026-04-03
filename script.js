@@ -99,8 +99,7 @@ function registerRevealGroup(elements, options = {}) {
 function setupScrollAnimations() {
   registerRevealGroup([document.querySelector('.hero-copy')], { origin: 'left', immediate: true });
   registerRevealGroup([document.querySelector('.hero-image-frame')], { origin: 'right', immediate: true });
-  registerRevealGroup([...document.querySelectorAll('.github-panel, .about-panel, .journey-panel, .skills-panel, .projects-panel, .contact-panel')], { step: 80 });
-  registerRevealGroup([...document.querySelectorAll('.github-stat')], { step: 60 });
+  registerRevealGroup([...document.querySelectorAll('.about-panel, .journey-panel, .skills-panel, .projects-panel, .contact-panel')], { step: 80 });
   registerRevealGroup([...document.querySelectorAll('.journey-card')], { step: 70 });
   registerRevealGroup([...document.querySelectorAll('.skill-stack')], { step: 90 });
   registerRevealGroup([...document.querySelectorAll('.skill-meter')], { step: 60 });

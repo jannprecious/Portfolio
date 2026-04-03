@@ -315,54 +315,10 @@ a {
   padding: 0 1rem;
   border-radius: 999px;
 }
-.github-panel {
-  padding: 1.6rem;
-  display: grid;
-  gap: 1.25rem;
-}
-.github-copy h2 {
-  font-family: 'Sora', sans-serif;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  line-height: 1.12;
-}
-.github-copy h2 span {
-  color: var(--accent);
-}
-.github-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.85rem;
-}
-.github-stat {
-  padding: 1rem;
-  border: 1px solid rgba(18, 196, 255, 0.18);
-  border-radius: 14px;
-  background: rgba(18, 35, 54, 0.7);
-}
-.github-stat span {
-  display: block;
-  margin-bottom: 0.45rem;
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.github-stat strong {
-  display: block;
-  color: #dff8ff;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-.github-links,
 .project-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
-}
-.github-links .primary-button,
-.github-links .outline-button {
-  min-width: 152px;
 }
 .hero-visual {
   --hero-shift: 0px;
@@ -422,7 +378,6 @@ a {
   transition: transform 0.3s ease-out, filter 0.3s ease-out;
 }
 .about-panel,
-.github-panel,
 .projects-panel,
 .journey-panel,
 .skills-panel,
@@ -800,7 +755,6 @@ a {
 }
 @media (max-width: 1080px) {
   .hero-panel,
-  .github-stats,
   .journey-columns,
   .skills-columns {
     grid-template-columns: 1fr;
@@ -852,7 +806,6 @@ a {
   }
   .page-shell { padding-top: 1rem; }
   .hero-copy,
-  .github-panel,
   .about-panel,
   .projects-panel,
   .journey-panel,
@@ -892,13 +845,8 @@ a {
     width: 100%;
     min-width: 0;
   }
-  .github-links,
   .project-actions {
     flex-direction: column;
-  }
-  .github-links .primary-button,
-  .github-links .outline-button {
-    width: 100%;
   }
   .project-toolbar,
   .project-card-footer {
